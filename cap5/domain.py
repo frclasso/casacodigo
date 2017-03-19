@@ -69,7 +69,7 @@ class DataTable:
     name = property(_get_name, _set_name, _del_name)
 
     def add_column(self, name, kind, description=""):
-        column  = Column(name, kind, description=description)
+        column = Column(name, kind, description=description)
         self._columns.append(column)
         return column
 
